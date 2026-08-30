@@ -1,0 +1,40 @@
+# Data - never commit medical imaging data
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Trained model artifacts - too large for git, tracked separately (Phase 3+)
+models/*.h5
+models/*.keras
+models/*.pt
+models/checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Experiment tracking / logs
+logs/
+runs/
+wandb/
+mlruns/
+
+# Environment / secrets
+.env
+*.pem
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
